@@ -1,0 +1,222 @@
+/* ==========================================================================
+  Import CSS
+  ========================================================================== */
+/* Google Fonts Oswald & Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* ==========================================================================
+  Base
+  ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.hero{
+  width: 100%;  
+  background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+  /* position: relative; */
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav{
+    width: 100%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+width: 80 px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    /* position: relative; */
+    font-size: 160px;
+    color: black;
+    font-weight: 600;
+
+}
+
+
+/* .content a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    border: 1px solid #fff;
+    padding: 14px 60px;
+    border-radius: 10px;
+    
+} */
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 300px;
+}
+
+.back-video{
+    width: 100%;
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* Link - Text Underline Effect */
+
+.tdu-transform-scale {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.tdu-transform-scale:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid rgb(36, 35, 35);
+    transform: scaleX(0.22);
+    transition: transform 250ms ease-in-out;
+}
+
+.tdu-transform-scale:hover:after {
+    transform: scaleX(1);
+}
+
+.tdu-transform-scale.tdu-fromLeft:after {
+    transform-origin: left;
+}
+
+.tdu-transform-scale.tdu-white:after {
+    border-color: rgb(36, 35, 35);
+}
+
+/* Custom for Activ */
+.activs .tdu-transform-scale:after {
+    padding-bottom: 0.625rem;
+}
+
+.activs .tdu-transform-scale:hover:after {
+    transform: scaleX(1.6);
+}
+
+.navbar-toggler,
+.navbar-toggler:is(:focus, :active),
+.navbar-toggler-icon:focus,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.btn-close {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(255, 255, 255, 1)'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+footer{
+    background-color: rgb(10, 10, 10);
+
+
+
+}
+
+.bannercontact {
+    background: url("assets/img/contact-banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+
+/*contact*/
+
+#contact main h2 {
+    background-position: bottom left;
+}
+
+#contact aside h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: initial;
+    font-size: initial;
+    font-weight: 700;
+}
+
+#contact textarea {
+    height: 220px;
+}
+
+/* Fix Label on Mobile Menu */
+
+.form-floating > label {
+    z-index: 1;
+}
+.mb-4-custom {
+    margin-bottom: 2rem;
+}
+
+.hr_contact{
+width: 50px;
+border: 2px solid black;
+opacity: 1 !important;
+
+}
+
+/* .bmap{
+ filter: grayscale(100%);
+} */
+
+
+.bannerabout {
+    background: url("assets/img/about-bg.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+/* .picto {
+    width: 10px;
+    height: 5px;
+} */
