@@ -12,7 +12,7 @@
 
 ## Aperçu 👀
 
-![cbd](https://github.com/kferrerux/cbdshop/assets/77007630/2f65a408-e2b4-4a07-85ba-36d9d22dff11)
+![cbd](https://github.com/kferrerux/cbdshop/assets/77007630/4d8c2a90-43a0-4dbc-8b39-9a4f3856e681)
 _<p align=center>CBDSHOP - INDEX</p>_
 
 ## Caractéristiques 🕵️
